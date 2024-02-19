@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+body {
+			background-size: cover;
+			color: white;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: rgba(41, 41, 41, 0.8);
+			padding: 20px;
+		}
+		
+		h1 {
+			font-size: 28px;
+			margin: 0;
+		}
+		
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e2d9df;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(84, 43, 168);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fcf4f4;
+}
+
+.active {
+  background-color: #dae2df;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:  rgb(84, 43, 168);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fcf4f4;
+}
+
+.active {
+  background-color: #dae2df;
+}
+		section {
+			padding: 50px;
+			text-align: center;
+		}
+		
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+    
+div.scroll-container {
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 2px;
+}
+
+div.scroll-container img {
+  padding: 2px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(116, 80, 80);
+  overflow: hidden;
+  opacity: 0.5;
+  width: 400px;
+  height: 200px;
+  
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+table{
+    border-spacing:30px ;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body {
+  color:white;
+}
+a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 132, 0);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 132, 0);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fcf4f4;
+}
+
+.active {
+  background-color: #e2d9df;
+}
+</style>
+</head>
+<body style="background-image: url('http://wallpapercave.com/wp/huDiDyr.jpg');">
+  <h1 style="color: rgb(255, 42, 0); text-align: center; background-color: rgb(255, 132, 0)">BLISSFUL BAY</h1>
+	<nav>
+		<ul>
+			<li><a href="PROJECT TRAIL CODE (1).HTML">HOME</a></li>
+			<li><a href="main menu.html">MENU</a></li>
+			<li><a href="Room booking.html">ROOMS</a></li>
+			<li><a href="FACILITIES (2).html">FACILITIES</a></li>
+			<li><a href="dining.html">DINING</a></li>
+			<li><a href="About Us.html">ABOUT</a></li>
+
+		</ul>
+	</nav>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>  Welcome to Blissful Bay!
+               
+            At Blissful Bay, we strive to provide our guests with an unforgettable experience from the moment they step through our doors. Located in Hyderabad, our hotel combines luxury, comfort, and convenience to ensure a truly exceptional stay.</p>
+</div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Pasupuleti Anusha" style="width:100%">
+      <div class="container">
+        <h2>Pasupuleti Anusha</h2>
+        <p class="title">CEO</p>
+        <p>The CEO is the highest-ranking employee within any organization;</p>
+        <p>anuroyal.2003@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="T yasaswini" style="width:100%">
+      <div class="container">
+        <h2>T yasaswini</h2>
+        <p class="title">Chief Director</p>
+        <p>Hotel Director is a person who manages all the operations of the hotel including taking strategic decisions</p>
+        <p>yasaswiniyes22@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Nirnai Nayagara" style="width:200px" height="200px">
+      <div class="container">
+        <h2>Sathyaveti Nirnai Nayagara</h2>
+        <p class="title">Chairman</p>
+        <p>The Chairman is responsible for leading the Board and focusing it on strategic matters.</p>
+        <p>nirnai.nayagara.nirnai@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+<div>
+<p>
+  
+  <h3>Our Accommodations:</h3>
+  Indulge in our beautifully designed rooms and suites, thoughtfully furnished with modern amenities to cater to your every need. Whether you're visiting for business or leisure, our spacious and well-appointed accommodations offer a relaxing retreat after a day of exploring or meetings.
+  
+<h3>Dining:</h3>
+  Experience culinary delights at our renowned on-site restaurant, where our talented chefs prepare a range of exquisite dishes using the finest locally sourced ingredients. From sumptuous breakfast buffets to mouthwatering à la carte options, our restaurant offers a memorable dining experience for every palate.
+  
+<h3>Facilities and Services:</h3>
+  We take pride in providing our guests with a host of exceptional facilities and services. Unwind and recharge at our state-of-the-art fitness center, take a refreshing dip in our sparkling pool, or pamper yourself with a rejuvenating treatment at our luxurious spa. Our dedicated staff is always on hand to assist you with any request, ensuring that your stay is both comfortable and memorable.
+  
+<h3>Events and Meetings:</h3>
+  With our versatile event spaces and professional event planning services, Blissful Bay is the perfect choice for your next conference, wedding, or special occasion. From intimate gatherings to large-scale events, our experienced team will work closely with you to ensure every detail is taken care of, leaving you free to enjoy your event with peace of mind.
+  
+<h3>Location:</h3>
+  Situated in the heart of Hyderabad, our hotel offers convenient access to the city's vibrant attractions, shopping districts, and cultural landmarks. Whether you're here for business or leisure, you'll find yourself just moments away from the best that Hyderabad has to offer.
+  
+  At Blissful Bay, we are committed to providing our guests with unparalleled hospitality and personalized service. We look forward to welcoming you and making your stay truly extraordinary.
+  </p>
+</div>
+</div>
+</body>
+
+</html>

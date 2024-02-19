@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+body {
+  color:white;
+}
+body{
+      background-image: url("https://img.freepik.com/premium-photo/cooking-banner-kitchen-black-table-ingredients-food-top-view-free-space-your-text_187166-59583.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+}
+h1 {
+  font-size: 50px;
+  color:rgb(174, 244, 153);
+}
+th {
+  font-size: 30px;
+  color:yellowgreen;
+}
+td {
+  font-size: 20px;
+  
+}
+image{
+      background-image: url("https://img.freepik.com/premium-photo/cooking-banner-kitchen-black-table-ingredients-food-top-view-free-space-your-text_187166-59583.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.1;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">NON VEG MENU</h1>
+
+<div class="row">
+  <div class="column">
+    <table>
+      <tr>
+        <th>ITEMS</th>
+        <th>PRICES</th>
+      </tr>
+      <th id="th1">SOUPS:</th>
+      <tr>
+        <td>Sweet Corn Chicken Soup</td>
+        <td>170.00</td>
+        <td><label for="quantity"></label>
+          <input type="range" id="quantity" name="quantity" min="1" max="5"></td>
+      </tr>
+      <tr>
+        <td>American Chopsy Chicken Soup</td>
+        <td>180.00</td>
+      </tr>
+      <tr>
+        <td>Sweet and Sour Chicken Soup</td>
+        <td>170.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <th id="th2">CHINESE WET:</th>
+      <tr>
+        <td>Chilli Chicken Wet</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td>Ginger Chicken Wet</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <th id="th3">SPRING ROLLS:</th>
+      <tr>
+        <td>Chicken Spring Roll</td>
+        <td>240.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <th id="th4">NOODLES:</th>
+      <tr>
+        <td>Chicken Noodles</td>
+        <td>240.00</td>
+      </tr>
+      <tr>
+        <td> Sez Chicken Noodles</td>
+        <td>250.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <th id="th5">PRAWNS STARTERS:</th>
+      <tr>
+        <td>Prawns Fry</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Prawns Manchuria</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Prawns Chilli</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Prawns 65</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Garlic Prawns</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Ginger Prawns</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Loose Prawns</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Pepper Prawns</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <th id="th6">CHICKEN STARTERS:</th>
+      <tr>
+        <td>Chicken Fry B</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td>Chicken Fry BL</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td>Chicken Manchuria</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td>Chicken Chilli</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td>Chicken 65</td>
+        <td>270.00</td>
+      </tr>
+      <tr>
+        <td>Ginger Chicken</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Lemon Chicken</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Spl.Chicken Snacks</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Garlic Chicken</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Cashewnut Chicken</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Chicken Keema Balls</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Sezwan Chicken</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Pepper Chicken</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Chicken 555</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Chicken Majestick</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Chicken Lollypop</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Chilli Wings with sauce</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <th id="th7">MUTTON STARTERS:</th>
+      <tr>
+        <td>Mutton Fry B</td>
+        <td>320.00</td>
+      </tr>
+      <tr>
+        <td>Chilli Mutton</td>
+        <td>350.00</td>
+      </tr>
+      <tr>
+        <td>Mutton 65</td>
+        <td>350.00</td>
+      </tr>
+      <tr>
+        <td>Mutton Kheema Balls</td>
+        <td>350.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <th id="th8">FISH STARTERS:</th>
+      <tr>
+        <td>Fish Fry BL</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Garlic Fish</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Fish Majestick</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Apollow Fish</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Fish Manchuria</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Fish Chilli</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Fish 65</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Fish Tikka</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Pepper Fish</td>
+        <td>290.00</td>
+      </tr>
+      <tr>
+        <td>Cashewnut Curry</td>
+        <td>230.00</td>
+      </tr>
+      <tr>
+        <td>Methi Chaman Curry</td>
+        <td>230.00</td>
+      </tr>
+      <tr>
+        <td>Cashew Panner Masala</td>
+        <td>230.00</td>
+      </tr>
+      <tr>
+        <td>Cashew Mushroom Curry</td>
+        <td>230.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table>
+      <tr>
+            <th id="th10">FISH CURRIES [B/L]:</th>
+            <tr>
+              <td>Kadai Fish Curry AP Rayalseema</td>
+              <td>270.00</td>
+            </tr>
+            <tr>
+              <td>Fish Curry</td>
+              <td>270.00</td>
+            </tr>
+            <tr>
+              <td>Fish Masala Curry</td>
+              <td>270.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            
+            <th id="th11">PRAWNS CURRIES:</th>
+            <tr>
+              <td>Prawns Masala Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>Kadai Prawn Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>AP Prawn Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>Rayalseema Prawns Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <th id="th12">MUTTON CURRIES:</th>
+            <tr>
+              <td>Gongura Mutton Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>Mutton Roganjosh Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>Ginger Mutton Curry</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>R'Seema Mutton Curry</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>mutton Kheema Curry </td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <th id="th13">CHICKEN CURRIES:</th>
+           <tr>
+              <td>AP Chicken curry B</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td>AP Chicken curry BL</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Gongoora Chicken curry B</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td>Gongoora Chicken curry B</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Chettinadu Chicken B</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td>Chettinadu Chicken BL</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Rayalseema Chicken curry B</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td>Rayalseema Chicken curry B</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Punjabi Chicken curry B</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Kadai Chicken curry BL</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Butter Chicken Curry</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Mogalai Chicken Curry</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Ginger Chicken Curry</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Chicken Maharani</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Methi Chicken Curry</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Chicken Kolhapuri</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Spl Chicken Curry</td>
+              <td>250.00</td>
+            </tr>
+            <tr><td>Chicken Keema curry</td>
+              <td>270.00</td>
+            </tr>
+            <tr>
+              <td>Chicken Cashewnut Masala</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Chicken Tikka MAsala</td>
+              <td>270.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <th id="th14">FRIED RICES:</th>
+            <tr>
+              <td>Chicken fried Rice</td>
+              <td>230.00</td>
+            </tr>
+            <tr>
+              <td>Spl Chicken Fried Rice</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td>Spl Mutton Fried Rice</td>
+              <td>260.00</td>
+            </tr>
+            <tr>
+              <td>Spl Fish Fried Rice</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td>Spl Prawns Fried Rice</td>
+              <td>260.00</td>
+            </tr>
+            <tr>
+              <td>Spl Sezwan Chicken Fried Rice</td>
+              <td>240.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <th id="th15">BIRIYANIS:</th>
+            <tr>
+              <td>Plain Biriyani</td>
+              <td>190.00</td>
+            </tr>
+            
+            <tr>
+              <td>Chicken Biriyani FP</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td>Chicken dum Biriyani</td>
+              <td>250.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <th id="th16">TANDOORI:</th>
+            <tr>
+              <td>Tandoori Chicken Half</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>Tandoori Chicken Full</td>
+              <td>600.00</td>
+            </tr>
+            <tr>
+              <td>Tangdi Kabab</td>
+              <td>280.00</td>
+            </tr>
+            <tr>
+              <td>Wings Kabab 5pcs</td>
+              <td>270.00</td>
+            </tr>
+            <tr>
+              <td>Chicken Tikka</td>
+              <td>300.00</td>
+            </tr>
+            <tr>
+              <td>Malai Tikka</td>
+              <td>300.00</td>
+            </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

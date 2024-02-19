@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Room Booking System</title>
+    <style>
+        *{
+            color: rgb(20, 20, 19);
+        }
+        body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: large;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border: 2px solid #4CAF50;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  body{
+    background-image: url(https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      
+}
+body {
+			background-size: cover;
+			color: white;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: rgba(41, 41, 41, 0.8);
+			padding: 20px;
+		}
+		
+		h1 {
+			font-size: 28px;
+			margin: 0;
+		}
+		
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e2d9df;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(84, 43, 168);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fcf4f4;
+}
+
+.active {
+  background-color: #dae2df;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:  rgb(84, 43, 168);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fcf4f4;
+}
+
+.active {
+  background-color: #dae2df;
+}
+		section {
+			padding: 50px;
+			text-align: center;
+		}
+		
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+    
+div.scroll-container {
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 2px;
+}
+
+div.scroll-container img {
+  padding: 2px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(116, 80, 80);
+  overflow: hidden;
+  opacity: 0.5;
+  width: 400px;
+  height: 200px;
+  
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+table{
+    border-spacing:30px ;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body {
+  color:white;
+}
+a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 132, 0);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 132, 0);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fcf4f4;
+}
+
+.active {
+  background-color: #e2d9df;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1 style="color: rgb(255, 42, 0); text-align: center; background-color: rgb(255, 132, 0)">BLISSFUL BAY</h1>
+    <nav>
+      <ul>
+        <li><a href="PROJECT TRAIL CODE (1).HTML">HOME</a></li>
+        <li><a href="main menu.html">MENU</a></li>
+        <li><a href="Room booking.html">ROOMS</a></li>
+        <li><a href="FACILITIES (2).html">FACILITIES</a></li>
+        <li><a href="dining.html">DINING</a></li>
+        <li><a href="About Us.html">ABOUT</a></li>
+  
+      </ul>
+    </nav>
+    <h1 style="color: rgb(247, 243, 243);">Room Booking SERVICE</h1>
+    <form style="background: rgba(22, 21, 21, 0.806); background-blend-mode: multiply;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="checkin" style="color: rgb(255, 255, 255);">Check-in date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+      <br>
+      <label for="checkout" style="color: rgb(255, 255, 255);">Check-out date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+      <br>
+      <label for="room-type">Room type:</label>
+      <select id="room-type" name="room-type" required>
+        <option value="">Select a room type</option>
+        <option value="single">Single    2000/-</option>
+        <option value="double">Double    4000/-</option>
+        <option value="family">Family(4 members)   8000/-</option>
+      </select>
+      <br>
+      <button type="submit" id="submit-btn">Book Now</button>
+    </form>
+    <script>
+      var pressedButton = document.getElementsByTagName("button")[0];
+   pressedButton.addEventListener("click", function (event) {
+      alert("Your Booking is Confirmed..!")
+   })
+    </script>
+      
+    
+  </body>
+</html>
